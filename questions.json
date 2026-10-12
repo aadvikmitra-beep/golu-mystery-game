@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Ganesha",
+    "description": "I have an elephant's head, a big heart, and a special place at the beginning of every new journey. People seek my blessings for wisdom, good fortune, and help overcoming obstacles.",
+    "hint": "My favorite sweet is the modak, and my vehicle is a mouse.",
+    "answer": "Lord Ganesha",
+    "image": "images/01.jpg"
+  },
+  {
+    "title": "Buddha",
+    "description": "I left behind a life of luxury to search for the meaning of life. Through meditation, I discovered a path to peace, compassion, and freedom from suffering.",
+    "hint": "I attained enlightenment under a Bodhi tree.",
+    "answer": "Gautama Buddha",
+    "image": "images/02.jpg"
+  },
+  {
+    "title": "Krishna",
+    "description": "I am playful, charming, and wise. I love music, especially the sound of my flute, and I share lessons about love, duty, and devotion.",
+    "hint": "My crown often features a peacock feather.",
+    "answer": "Lord Krishna",
+    "image": "images/03.jpg"
+  },
+  {
+    "title": "Rama, Sita, Lakshmana and Hanuman",
+    "description": "This family’s return to Ayodhya after 14 years in exile was celebrated with rows of oil lamps. This homecoming is the reason Diwali is celebrated in much of North India.",
+    "hint": "Their story is told in the Ramayana.",
+    "answer": "Lord Rama, Goddess Sita, Lakshmana and Hanuman",
+    "image": "images/04.jpg"
+  },
+  {
+    "title": "Radha and Krishna on a Boat",
+    "description": "These two are enjoying a boat ride together. One is known for playing the flute, and the other is his beloved. Their story is celebrated in songs, dances, and festivals across India.",
+    "hint": "One wears a peacock feather in his crown, and the other is named Radha.",
+    "answer": "Radha and Krishna on a boat",
+    "image": "images/05.jpg"
+  },
+  {
+    "title": "Sai Baba",
+    "description": "I look like a calm, elderly man in simple clothes rather than a traditional, heavily decorated deity. People from different faiths come to me for blessings, comfort, and guidance.",
+    "hint": "My famous teaching is “Shraddha and Saburi,” meaning faith and patience.",
+    "answer": "Shirdi Sai Baba",
+    "image": "images/06.jpg"
+  },
+  {
+    "title": "Maa Kali",
+    "description": "I have a dark complexion and a fierce expression, but I am a powerful protector who destroys evil and protects the innocent. My appearance may seem fearsome, but I represent the triumph of divine strength over darkness.",
+    "hint": "My traditional images often show a garland of heads and an extended tongue.",
+    "answer": "Goddess Kali",
+    "image": "images/07.jpg"
+  },
+  {
+    "title": "Tara Devi",
+    "description": "My golden appearance makes me stand out among the dolls. I represent compassion, protection, and hope, and this idol also carries a special connection to a monastery in Mangalore.",
+    "hint": "My name means “star” in Sanskrit, and I am revered in Buddhist traditions.",
+    "answer": "Tara Devi",
+    "image": "images/08.jpg"
+  },
+  {
+    "title": "Goddess Saraswati",
+    "description": "I bless students, musicians, artists, and seekers of knowledge. Wherever learning, creativity, and wisdom flourish, my blessings are remembered.",
+    "hint": "Look for my veena, white clothing, and often a swan.",
+    "answer": "Goddess Saraswati",
+    "image": "images/09.jpg"
+  },
+  {
+    "title": "Jagannath, Subhadra and Balram",
+    "description": "Three beloved siblings stand together, each with a distinctive appearance and a special place in an important Indian pilgrimage tradition.",
+    "hint": "Their famous temple and annual Rath Yatra are associated with Puri in Odisha.",
+    "answer": "Lord Jagannath, Goddess Subhadra and Lord Balabhadra (Balaram)",
+    "image": "images/10.jpg"
+  },
+  {
+    "title": "Goddess Durga’s Face",
+    "description": "Even without seeing my entire form, my powerful expression tells a story of courage, protection, and divine feminine strength.",
+    "hint": "I am worshipped especially during Navaratri, and my face is often adorned with a red bindi and a crown.",
+    "answer": "Goddess Durga",
+    "image": "images/11.jpg"
+  },
+  {
+    "title": "Goddess Durga Killing Mahishasura",
+    "description": "A mighty demon believed himself invincible. But a powerful goddess appeared to battle him and restore balance to the world.",
+    "hint": "The demon I defeat is often depicted as a buffalo or a figure emerging from one.",
+    "answer": "Mahishasuramardini — Goddess Durga slaying Mahishasura",
+    "image": "images/12.jpg"
+  },
+  {
+    "title": "LEGO Ganesha",
+    "description": "An ancient symbol of wisdom meets the modern world of tiny interlocking bricks. I may be built one brick at a time, but my blessings are timeless!",
+    "hint": "I still have an elephant’s head, even though I am made of LEGO.",
+    "answer": "LEGO Ganesha",
+    "image": "images/13.jpg"
+  },
+  {
+    "title": "Ram Mandir, Ayodhya",
+    "description": "This magnificent temple is dedicated to Lord Rama and stands in a city deeply connected to his life story.",
+    "hint": "The city it's in is believed to be Lord Rama's birthplace.",
+    "answer": "Ram Mandir, Ayodhya",
+    "image": "images/14.jpg"
+  },
+  {
+    "title": "The Sacred Tulsi Plant",
+    "description": "I may be a small plant, but I hold a special place in many Indian homes. I am nurtured with care and associated with purity, devotion, and daily prayers.",
+    "hint": "My leaves are often offered in worship to Lord Vishnu and Krishna.",
+    "answer": "Tulsi (Holy Basil)",
+    "image": "images/15.jpg"
+  },
+  {
+    "title": "The Ten Avatars",
+    "description": "When the world needs protection and balance, the divine takes different forms across the ages. Together, these ten incarnations tell a remarkable story of restoring dharma.",
+    "hint": "The sequence traditionally begins with a fish and includes a tortoise, a boar, and a half-man, half-lion.",
+    "answer": "Dashavatara — the ten avatars of Lord Vishnu",
+    "image": "images/16.jpg"
+  },
+  {
+    "title": "Ten LEGO Mandalorians",
+    "description": "Ten mysterious warriors stand ready for action. They follow a strict code, wear distinctive armor, and belong to a galaxy far, far away.",
+    "hint": "Their creed includes the words “This is the Way.”",
+    "answer": "LEGO Mandalorians from Star Wars",
+    "image": "images/17.jpg"
+  },
+  {
+    "title": "The Fruit Vendor",
+    "description": "Here is a little slice of everyday life: a hardworking couple, fresh produce, and a kitchen in the background. Together, they capture the charm of a traditional marketplace and home.",
+    "hint": "One of them sells the colorful goodies that make a fruit salad delicious.",
+    "answer": "The fruit vendor",
+    "image": "images/18.jpg"
+  },
+  {
+    "title": "The Japanese Doll",
+    "description": "Dressed in beautiful traditional clothing, I reflect the elegance and artistry of a culture known for its graceful customs and attention to detail.",
+    "hint": "Think kimono, delicate craftsmanship, and the Land of the Rising Sun.",
+    "answer": "Japanese doll",
+    "image": "images/19.jpg"
+  },
+  {
+    "title": "The Greek Doll",
+    "description": "I bring a little Mediterranean charm to the Golu. My homeland is known for ancient temples, myths of gods and heroes, blue seas, and delicious food.",
+    "hint": "Think Athens, the Acropolis, and the land of Zeus.",
+    "answer": "Greek doll",
+    "image": "images/20.jpg"
+  },
+  {
+    "title": "The Mexican Corn-Husk Doll",
+    "description": "I am crafted from a humble natural material and celebrate the creativity of traditional folk art. My appearance connects me to handmade crafts and cultural heritage.",
+    "hint": "The material I am made from is the outer covering of a staple crop used to make tortillas.",
+    "answer": "Mexican corn-husk doll",
+    "image": "images/21.jpg"
+  },
+  {
+    "title": "The Bullock Cart",
+    "description": "Before cars and delivery trucks took over the roads, I helped carry people, crops, and goods. I am a reminder of a time when travel moved at the pace of animals.",
+    "hint": "Two sturdy animals pull me, and farmers once relied on me every day.",
+    "answer": "Bullock cart",
+    "image": "images/22.jpg"
+  },
+  {
+    "title": "The Horse Carriage",
+    "description": "Before modern taxis and cars, I offered a stylish way to travel through town. With wheels, a carriage, and a powerful animal up front, I was once a familiar sight on the roads.",
+    "hint": "Cinderella famously rode in a magical version of me.",
+    "answer": "Horse-drawn carriage",
+    "image": "images/23.svg"
+  },
+  {
+    "title": "The LEGO Harry Potter Book Set",
+    "description": "A world of spells, magical creatures, and wizarding adventures comes alive through a construction toy inspired by a beloved fantasy series.",
+    "hint": "My hero has a lightning-shaped scar and attends Hogwarts School of Witchcraft and Wizardry.",
+    "answer": "LEGO Harry Potter book set",
+    "image": "images/24.jpg"
+  },
+  {
+    "title": "The Golu Steps Made with LEGO",
+    "description": "Even the stage holding this Golu has a story of its own! Instead of relying only on traditional materials, these steps bring two imaginative worlds together in an unexpected way.",
+    "hint": "Look for a miniature model of the steps.",
+    "answer": "Golu steps built with Harry Potter and Star Wars LEGO",
+    "image": "images/25.jpg"
+  },
+  {
+    "title": "LEGO Spider-Man: Brand New Day",
+    "description": "A Lego set depicting a superhero battle.",
+    "hint": "This was inspired by a recent superhero movie that became one of the highest grossing movies of all time.",
+    "answer": "LEGO Spider-Man scene inspired by Brand New Day",
+    "image": "images/26.jpg"
+  },
+  {
+    "title": "The New Orleans Jazz Musician",
+    "description": "My music brings a lively city to life. With rhythm, improvisation, and a little swing, I help create a sound that has travelled around the world.",
+    "hint": "Think brass bands, the French Quarter, and the birthplace of jazz in Louisiana.",
+    "answer": "New Orleans jazz musician",
+    "image": "images/27.jpg"
+  },
+  {
+    "title": "The Pink Batgirl LEGO",
+    "description": "I am normally a dark and brooding superhero but today I am wearing a pink tutu.",
+    "hint": "I am associated with Gotham City and am a lego",
+    "answer": "Pink Batman LEGO figure",
+    "image": "images/28.jpg"
+  },
+  {
+    "title": "The Madagascar Lemur",
+    "description": "I am a curious creature with expressive eyes and a distinctive tail. I come from an island with wildlife found nowhere else in the world.",
+    "hint": "Think of King Julien and his famous dance from the Madagascar movie.",
+    "answer": "Lemur from Madagascar",
+    "image": "images/29.jpg"
+  },
+  {
+    "title": "The Costa Rican Sloth",
+    "description": "I take life slowly, spend much of my time in trees, and make a virtue of doing everything at my own pace. My home is a tropical paradise full of rainforests and wildlife.",
+    "hint": "“Pura vida” is a famous expression in the country I call home.",
+    "answer": "Costa Rican sloth",
+    "image": "images/30.jpg"
+  },
+  {
+    "title": "The School with a Math Lesson",
+    "description": "In this little world, students gather, a lesson is underway, and young minds are busy learning. It captures the familiar sights and sounds of a classroom.",
+    "hint": "The teacher may ask you to solve an equation rather than memorize a myth!",
+    "answer": "School scene with a mathematics lesson",
+    "image": "images/31.jpg"
+  },
+  {
+    "title": "The Singapore Merlion",
+    "description": "I am a creature that combines two symbols of a modern island nation. I stand proudly as a reminder of its maritime roots and its identity as a major city.",
+    "hint": "My head is a lion, my body is a fish, and I am a famous Singapore landmark.",
+    "answer": "Singapore Merlion",
+    "image": "images/32.jpg"
+  },
+  {
+    "title": "The Mexican Mariachi Band",
+    "description": "We bring a festive spirit wherever we go, with lively melodies, colorful traditional outfits, and music that celebrates love, family, and community.",
+    "hint": "Our sound often features trumpets, string instruments, and the traditional charro suit.",
+    "answer": "Mexican mariachi band",
+    "image": "images/33.jpg"
+  },
+  {
+    "title": "Grandpa and Grandma— The Merchant Couple",
+    "description": "This traditional couple represents the world of trade and commerce. With their familiar attire and businesslike presence, they bring a charming slice of old-time Indian life to the Golu.",
+    "hint": "They are a grandfather and grandmother couple.",
+    "answer": "Grandpa and Grandma merchant dolls",
+    "image": "images/34.jpg"
+  },
+  {
+    "title": "The Wooden Couple — A Family Heirloom",
+    "description": "I have stood the test of time, carrying memories across generations. Unlike a newly purchased decoration, my value lies in the family stories and traditions I represent.",
+    "hint": "I am made of wood, and my place in this Golu connects past generations with the present.",
+    "answer": "Traditional wooden couple — family heirloom",
+    "image": "images/35.jpg"
+  },
+  {
+    "title": "The Dancers",
+    "description": "Through movement, rhythm, and expression, we tell stories without needing words. Our poses capture the joy of performance and the beauty of artistic traditions.",
+    "hint": "Our art form can turn music into a story told through the body.",
+    "answer": "Dancers",
+    "image": "images/36.jpg"
+  },
+  {
+    "title": "The Turkish Whirling Dervish",
+    "description": "I spin gracefully in a meditative dance that represents a spiritual journey. My flowing robes and circular movements create a mesmerizing sight.",
+    "hint": "My traditional ceremony is associated with the Mevlevi Sufi order and the poet Rumi.",
+    "answer": "Turkish whirling dervish",
+    "image": "images/37.jpg"
+  },
+  {
+    "title": "The Knights",
+    "description": "Clad in armor and carrying weapons, we belong to an age of castles, kings, and quests. Our stories are filled with courage, loyalty, and battles for honor.",
+    "hint": "Think medieval Europe, swords, shields, and the legend of King Arthur.",
+    "answer": "Medieval knights",
+    "image": "images/38.jpg"
+  },
+  {
+    "title": "The Wooden Musicians",
+    "description": "Though carved from wood, we seem ready to fill the room with music. Our instruments and poses celebrate the timeless joy of making melodies together.",
+    "hint": "Look at the instruments we hold to discover what kind of musical ensemble we represent.",
+    "answer": "Traditional wooden musician dolls",
+    "image": "images/39.jpg"
+  },
+  {
+    "title": "The Xochimilco Boat, Batman and Joker",
+    "description": "A little bit of Mexico meets Gotham City! One figure represents a famous traditional boat ride, while two superheroes are ready for action. Can you identify this unusual combination?",
+    "hint": "The colorful boats are found in Mexico City, Batman rides on one, while chasing the Joker.",
+    "answer": "Xochimilco boat, Batman and Joker on a scooter",
+    "image": "images/40.jpg"
+  }
+]

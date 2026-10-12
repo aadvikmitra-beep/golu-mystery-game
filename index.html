@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8f1d2c">
+<title>Navaratri Golu Mystery Game</title>
+<style>
+:root{--maroon:#8f1d2c;--deep:#511523;--saffron:#e58a20;--gold:#f5c95e;--cream:#fff8ed;--ink:#30202a;--muted:#74646a;--green:#1f6b52;--line:#ead9c6;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 8% 8%,#ffe7bd 0,transparent 28%),radial-gradient(circle at 92% 15%,#f5d6df 0,transparent 25%),var(--cream);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+header{background:linear-gradient(120deg,var(--deep),var(--maroon));color:#fff;padding:22px 16px;text-align:center;border-bottom:5px solid var(--gold)}
+.motif{color:var(--gold);letter-spacing:.28em;font-size:1rem;margin-bottom:8px}header h1{font-family:Georgia,serif;margin:0;font-size:clamp(1.7rem,5vw,2.7rem);line-height:1.15}header p{margin:10px auto 0;max-width:620px;color:#ffe8df}
+main{width:min(760px,calc(100% - 24px));margin:24px auto 50px}
+.panel{background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:22px;padding:clamp(20px,5vw,34px);box-shadow:0 14px 35px #51152312}
+.eyebrow{color:var(--maroon);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}
+h2{font-family:Georgia,serif;font-size:clamp(1.5rem,4vw,2.15rem);line-height:1.2;margin:.55rem 0 1rem}
+p{line-height:1.65}.welcome{text-align:center;padding:38px 24px}.welcome .symbol{font-size:3.2rem;margin-bottom:8px}.welcome p{max-width:520px;margin:0 auto 20px;color:var(--muted)}
+button{font:inherit;font-weight:750;border:0;border-radius:14px;padding:14px 18px;cursor:pointer;transition:transform .12s,filter .12s;min-height:48px}
+button:hover{filter:brightness(1.04);transform:translateY(-1px)}button:focus-visible{outline:3px solid #2d76d2;outline-offset:3px}
+.primary{background:var(--maroon);color:#fff;box-shadow:0 5px 0 #5d1420}.secondary{background:#fff1d7;color:#71320f;border:1px solid #f0d29b}.outline{background:#fff;color:var(--maroon);border:1px solid #d7a8ad}.green{background:var(--green);color:white}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.actions button{flex:1 1 160px}
+.progress-wrap{height:8px;background:#f0e2d7;border-radius:999px;overflow:hidden;margin:10px 0 22px}.progress{height:100%;background:linear-gradient(90deg,var(--saffron),var(--maroon));width:0;transition:width .2s}
+.meta{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--muted);font-size:.9rem}.question-description{font-size:1.12rem}
+.reveal-box{margin-top:16px;border-radius:14px;padding:16px;background:#fff5df;border:1px solid #f0d8a6}.reveal-box h3{margin:0 0 6px;font-size:1rem;color:#71320f}.reveal-box p{margin:0}
+.answer-image{display:block;width:100%;max-height:440px;object-fit:contain;background:#fffaf5;border:1px solid var(--line);border-radius:16px;margin:16px 0 12px}
+.hidden{display:none!important}.tag{display:inline-block;background:#f9e5e8;color:var(--maroon);padding:6px 10px;border-radius:999px;font-size:.82rem;font-weight:800}
+.review-item{border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:14px}.review-item h3{margin:0 0 8px;font-family:Georgia,serif}.review-item img{width:100%;max-height:250px;object-fit:contain;border-radius:10px;background:#fffaf5;margin-top:10px}
+footer{text-align:center;color:#8b777d;font-size:.82rem;padding:0 16px 26px}
+@media(max-width:480px){main{margin-top:14px}.panel{border-radius:18px}.actions{flex-direction:column}.actions button{width:100%}.meta{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><div class="motif">✦ ॐ ✦ ॐ ✦</div><h1>Navaratri Golu<br>Mystery Game</h1><p>Explore the stories behind the dolls and discover the treasures of our Golu display.</p></header>
+<main>
+<section id="welcome" class="panel welcome">
+<div class="symbol" aria-hidden="true">🪔</div><div class="eyebrow">A five-question challenge</div><h2>Can you identify the Golu items?</h2>
+<p>You’ll get five random clues. Read each description, reveal a hint if you need help, and reveal the answer when you’re ready. The answer includes a picture of the item.</p>
+<button id="startBtn" class="primary">Start Game</button>
+</section>
+<section id="game" class="panel hidden" aria-live="polite">
+<div class="meta"><span id="counter">Question 1 of 5</span><span id="progressText">0 of 5 completed</span></div><div class="progress-wrap"><div id="progress" class="progress"></div></div>
+<div class="eyebrow">Can you identify this item?</div><h2 id="itemTitle">Mystery item</h2>
+<p id="description" class="question-description"></p>
+<div id="hintBox" class="reveal-box hidden"><h3>Hint</h3><p id="hintText"></p></div>
+<div id="answerBox" class="reveal-box hidden"><h3>Answer</h3><p id="answerText"></p><img id="answerImage" class="answer-image" alt="Picture of the answer"></div>
+<div class="actions" id="revealActions"><button id="hintBtn" class="secondary">Reveal Hint</button><button id="answerBtn" class="primary">Reveal Answer</button></div>
+<div class="actions hidden" id="nextActions"><button id="nextBtn" class="primary">Next Question</button></div>
+</section>
+<section id="complete" class="panel hidden">
+<div class="symbol" aria-hidden="true">🌺</div><div class="eyebrow">Challenge complete</div><h2>Well done!</h2><p>You’ve reached the end of your five-question Golu challenge. You can review the clues and answers or try a fresh random set.</p>
+<div class="actions"><button id="reviewBtn" class="secondary">Review All Five Questions</button><button id="againBtn" class="primary">Play Again</button></div>
+</section>
+<section id="review" class="panel hidden"><div class="eyebrow">Your completed round</div><h2>Review the five questions</h2><p>Descriptions, hints, answers, and pictures from this round.</p><div id="reviewList"></div><div class="actions"><button id="reviewAgainBtn" class="primary">Play Again</button><button id="backCompleteBtn" class="outline">Back to Completion</button></div></section>
+</main>
+<footer>Made for a Navaratri Golu display · No scores, accounts, or saved progress</footer>
+<script>
+let allItems=[], round=[], index=0, revealedHint=false, revealedAnswer=false;
+const $=id=>document.getElementById(id);
+const show=(id)=>$(id).classList.remove('hidden');
+const hide=(id)=>$(id).classList.add('hidden');
+async function init(){try{const r=await fetch('questions.json');if(!r.ok)throw new Error('Could not load questions');allItems=await r.json();$('startBtn').disabled=false;}catch(e){$('welcome').innerHTML='<h2>Could not load the question catalogue</h2><p>Please make sure the entire downloaded game folder is uploaded to GitHub Pages, including <code>questions.json</code>.</p>';}}
+function newRound(){round=[...allItems].sort(()=>Math.random()-.5).slice(0,5);index=0;renderQuestion();hide('welcome');hide('complete');hide('review');show('game');}
+function renderQuestion(){const item=round[index];revealedHint=false;revealedAnswer=false;$('counter').textContent=`Question ${index+1} of 5`;$('progressText').textContent=`${index} of 5 completed`;$('progress').style.width=`${index/5*100}%`;$('itemTitle').textContent=item.title;$('description').textContent=item.description;$('hintText').textContent=item.hint;$('answerText').textContent=item.answer;$('answerImage').src=item.image;$('answerImage').alt='Picture of '+item.answer;hide('hintBox');hide('answerBox');show('revealActions');hide('nextActions');$('hintBtn').disabled=false;$('answerBtn').disabled=false;$('nextBtn').textContent=index===4?'Finish Game':'Next Question';}
+function revealHint(){revealedHint=true;show('hintBox');$('hintBtn').textContent='Hint Revealed';$('hintBtn').disabled=true;}
+function revealAnswer(){revealedAnswer=true;show('answerBox');hide('revealActions');show('nextActions');$('progressText').textContent=`${index+1} of 5 completed`;$('progress').style.width=`${(index+1)/5*100}%`;}
+function nextQuestion(){if(index<4){index++;renderQuestion();}else{hide('game');show('complete');}}
+function reviewRound(){hide('complete');hide('game');const list=$('reviewList');list.innerHTML='';round.forEach((item,i)=>{const card=document.createElement('article');card.className='review-item';const title=document.createElement('h3');title.textContent=`${i+1}. ${item.title}`;const desc=document.createElement('p');desc.textContent=item.description;const hintHead=document.createElement('strong');hintHead.textContent='Hint: ';const hint=document.createElement('p');hint.append(hintHead,document.createTextNode(item.hint));const answerHead=document.createElement('strong');answerHead.textContent='Answer: ';const answer=document.createElement('p');answer.append(answerHead,document.createTextNode(item.answer));const img=document.createElement('img');img.src=item.image;img.alt='Picture of '+item.answer;card.append(title,desc,hint,answer,img);list.append(card);});show('review');}
+$('startBtn').addEventListener('click',newRound);$('hintBtn').addEventListener('click',revealHint);$('answerBtn').addEventListener('click',revealAnswer);$('nextBtn').addEventListener('click',nextQuestion);$('againBtn').addEventListener('click',newRound);$('reviewAgainBtn').addEventListener('click',newRound);$('reviewBtn').addEventListener('click',reviewRound);$('backCompleteBtn').addEventListener('click',()=>{hide('review');show('complete');});
+init();
+</script>
+</body></html>
