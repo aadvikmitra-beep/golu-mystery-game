@@ -39,10 +39,10 @@ footer{text-align:center;color:#8b777d;font-size:.82rem;padding:0 16px 26px}
 </section>
 <section id="game" class="panel hidden" aria-live="polite">
 <div class="meta"><span id="counter">Question 1 of 5</span><span id="progressText">0 of 5 completed</span></div><div class="progress-wrap"><div id="progress" class="progress"></div></div>
-<div class="eyebrow">Can you identify this item?</div><h2 id="itemTitle">Mystery item</h2>
+<div class="eyebrow">Can you identify this item?</div>
 <p id="description" class="question-description"></p>
 <div id="hintBox" class="reveal-box hidden"><h3>Hint</h3><p id="hintText"></p></div>
-<div id="answerBox" class="reveal-box hidden"><h3>Answer</h3><p id="answerText"></p><img id="answerImage" class="answer-image" alt="Picture of the answer"></div>
+<div id="answerBox" class="reveal-box hidden"><h3>Answer</h3><p><strong id="answerTitle"></strong></p><p id="answerText"></p><img id="answerImage" class="answer-image" alt="Picture of the answer"></div>
 <div class="actions" id="revealActions"><button id="hintBtn" class="secondary">Reveal Hint</button><button id="answerBtn" class="primary">Reveal Answer</button></div>
 <div class="actions hidden" id="nextActions"><button id="nextBtn" class="primary">Next Question</button></div>
 </section>
@@ -60,7 +60,7 @@ const show=(id)=>$(id).classList.remove('hidden');
 const hide=(id)=>$(id).classList.add('hidden');
 async function init(){try{const r=await fetch('questions.json');if(!r.ok)throw new Error('Could not load questions');allItems=await r.json();$('startBtn').disabled=false;}catch(e){$('welcome').innerHTML='<h2>Could not load the question catalogue</h2><p>Please make sure the entire downloaded game folder is uploaded to GitHub Pages, including <code>questions.json</code>.</p>';}}
 function newRound(){round=[...allItems].sort(()=>Math.random()-.5).slice(0,5);index=0;renderQuestion();hide('welcome');hide('complete');hide('review');show('game');}
-function renderQuestion(){const item=round[index];revealedHint=false;revealedAnswer=false;$('counter').textContent=`Question ${index+1} of 5`;$('progressText').textContent=`${index} of 5 completed`;$('progress').style.width=`${index/5*100}%`;$('itemTitle').textContent=item.title;$('description').textContent=item.description;$('hintText').textContent=item.hint;$('answerText').textContent=item.answer;$('answerImage').src=item.image;$('answerImage').alt='Picture of '+item.answer;hide('hintBox');hide('answerBox');show('revealActions');hide('nextActions');$('hintBtn').disabled=false;$('answerBtn').disabled=false;$('nextBtn').textContent=index===4?'Finish Game':'Next Question';}
+function renderQuestion(){const item=round[index];revealedHint=false;revealedAnswer=false;$('counter').textContent=`Question ${index+1} of 5`;$('progressText').textContent=`${index} of 5 completed`;$('progress').style.width=`${index/5*100}%`;$('answerTitle').textContent=item.title;$('description').textContent=item.description;$('hintText').textContent=item.hint;$('answerText').textContent=item.answer;$('answerImage').src=item.image;$('answerImage').alt='Picture of '+item.answer;hide('hintBox');hide('answerBox');show('revealActions');hide('nextActions');$('hintBtn').disabled=false;$('answerBtn').disabled=false;$('nextBtn').textContent=index===4?'Finish Game':'Next Question';}
 function revealHint(){revealedHint=true;show('hintBox');$('hintBtn').textContent='Hint Revealed';$('hintBtn').disabled=true;}
 function revealAnswer(){revealedAnswer=true;show('answerBox');hide('revealActions');show('nextActions');$('progressText').textContent=`${index+1} of 5 completed`;$('progress').style.width=`${(index+1)/5*100}%`;}
 function nextQuestion(){if(index<4){index++;renderQuestion();}else{hide('game');show('complete');}}
